@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Forms & Input tags</title>
+</head>
+
+<body>
+    <form action="backend.java">
+        <div> <!-- div takes up the whole space in that line and the next element is forced to go in the next line-->
+            Name: <input type="text" name="myname"> <!-- these "name" are for backend purpose-->
+        </div>
+        <br>
+        <label for="name2">Name2</label> <!--id of Name. See the difference between Name  and Name2 on website-->
+        <div>
+            <input type="text" name="myname" id="name2">
+        </div>
+        <br>
+        <div>
+            Role: <input type="text" name="myrole">
+        </div>
+        <br>
+        <div>
+            Email: <input type="email" name="myemail">
+        </div>
+        <br>
+        <div>
+            Date: <input type="date" name="mydata">
+        </div>
+        <br>
+        <div>
+            Are you eligible<input type="checkbox" value="myeligibility"
+                checked><!-- checked - check in the box bydefault-->
+        </div>
+        <br>
+        <div>
+            Gender: Male <input type="radio" name="mygender"> Female <input type="radio" name="mygender">
+        </div>
+        <br>
+        <div>
+            write about yourself: <textarea name="mytext" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="car"> Car</label>
+            <select name="mycar" id="car">
+                <option value="ford">Ford</option>
+                <option value="fiat">Fiat</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="submit now">
+            <input type="reset" value="reset">
+        </div>
+
+    </form>
+</body>
+
+</html>
