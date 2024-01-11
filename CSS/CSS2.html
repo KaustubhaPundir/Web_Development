@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Selectors</title>
+    <style>
+        p{                /*this is element selector , implements on all p*/
+            color: red ;
+            border: 2px solid red;
+        }
+        #blueelement{    /* id selector implements to only p with the id= blueelement*/
+            color: blue;
+        }                  /* class implements to all the p's having class greenclass*/
+        .greenclass{
+            color: green;
+        }
+        footer,span{      /* this is group selector*/
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h3>CSS Selectors</h3>
+    <p>This is an examplar paragraph to demonstrate css selectors</p>
+    <p id="blueelement">This is another examplar paragraph to demonstrate css selectors</p>
+    <p class="greenclass">This is another examplar paragraph to demonstrate css selectors</p>
+    <div>
+        <p>This is an examplar paragraph to demonstrate css selectors</p>
+        <span>This is span</span>
+        <footer>This is footer</footer>
+    </div>
+</body>
+</html>
