@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS1</title>
+    <!--this is external css , if we write the next line below the style it will execute beacuse in css the css which is written afterwards is going to be implemented -->
+    <link rel="stylesheet" href="CSS1_externcss.css"> <!--!important is used when we have to set the priority to first of the css-->
+     <!--internal css-->
+     <!-- but because both inline and internal css are implemented inline gets more priority-->
+     <!--to see internal css working remove inline css-->
+    <style>
+        p{
+            color: purple ;
+        }
+    </style>
+</head>
+<body>
+    <p style="color: yellow;">This is css implementation</p>
+</body>
+</html>
