@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Box model</title>
+    <style>
+         *{   /* universal selector applies to all */
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;  /*these properties will be made bydefault to all the elements untill overridden by the changes below*/
+        }
+        .container{
+            background-color: burlywood;
+            border: 3px solid rgb(64, 6, 119);
+            /*padding: 70px; /*space between border and element there are other options like padding top etc*/ 
+            /* padding-top: 70px; */
+            /* padding-left: 70 px; */
+
+            /* padding: 23px 50px 6px 70px ; padding= top right bottom left */
+
+            /* padding: y(top/bottom) x(left/right); */
+            padding: 34px 19px;
+            margin: 34px; /*same as padding options*/
+            border-radius: 23px;
+            width: 500;
+            box-sizing: border-box; /*this will not allow in change of width if we increase padding or margin*/
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>This is a heading</h2>
+        <p id="first">This is a paragraph</p>
+    </div>
+    <div class="container">
+        <h2>This is a heading</h2>
+        <p id="second">This is a paragraph</p>
+    </div>
+    <div class="container">
+        <h2>This is a heading</h2>
+        <p id="third">This is a paragraph</p>
+    </div>
+</body>
+</html>
