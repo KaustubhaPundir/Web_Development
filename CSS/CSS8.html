@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo selectors and more designing</title>
+    <style>
+        .container{
+            border: 2px solid red;
+            background-color: rgb(208, 250, 146);
+            padding: 34px;
+            margin: 34px auto;
+            width: 666px;
+        }
+        a{
+            text-decoration: none;  /*the underline is gone from readmore*/
+        }
+        a:hover{
+            /*this is a pseudo selector*/
+            /*hover means what will happen when we hover over read more*/
+            color: black;
+            background-color: wheat;
+        }
+        a:visited{
+            /*visited means what will happen to the button's properties after clicking on it, after click link will open when we will be back from the link this change occurs to the button*/
+            background-color: chartreuse;
+        }
+        a:active{
+            /*during the clicking*/
+            background-color: yellow;
+        }
+        .btn{
+            background-color: tomato;
+            padding: 6px;
+            border: none;
+            cursor: pointer; /*before this hand pointer was not showing up on button */
+            font-size: 13px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="cont1">
+        <h3>This is a heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quia laboriosam quaerat enim, quam cumque 
+        voluptate earum similique itaque qui molestias dolor, aut sit libero nostrum! Accusantium eius labore fuga quae provident dolor quos.</p>
+        <a href="https://www.google.com/"class="btn">Read more....</a>
+        <button class="btn">Contact us</button>
+    </div>
+</body>
+</html>
