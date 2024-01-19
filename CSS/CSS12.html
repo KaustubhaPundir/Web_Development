@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container{
+            height: 344px;
+            width: 100%;
+            border: 2px solid black;
+            display: flex;
+
+            /* flex properties */
+
+            /* flex-direction: row;   by default */
+            /* flex-direction: column; */
+            /* flex-direction: row-reverse; */
+            flex-direction: row;
+
+            /* flex-wrap: wrap; this will allow the "items to come in next line in a responsive design */
+            flex-wrap: wrap-reverse; /*open inspect and see in responsive section to see the changes, default is no wrap*/
+
+            flex-flow: row wrap-reverse;  /*above two properties in one*/
+
+            /* justify-content: center;  make the things align in horizontal
+            justify-content: space-between;
+            justify-content: space-evenly;
+            justify-content: space-around; */
+
+            align-items: center; /*vertically alignment*/
+            align-items: flex-end; 
+            align-items: flex-start;
+            align-items: stretch;
+       }
+        .item{
+            width: 100px;
+            height: 100px;
+            background-color: tomato;
+            border: 2px solid green;
+            margin: 10px;
+            padding: 3px;
+            
+        }
+        #item-1{
+            /* flex properties for a flex item */
+            /* higher the order later it will show up in the container */
+            /* order: 2; */
+
+            /* 3 times the other items on increase in size in responsive item*/
+            flex-grow: 3;
+
+            /* 3 times shrink in responsive item */
+            flex-shrink: 3;
+
+            flex-basis: 320px;  /*changes the default size */
+            /* when flex-direction is set to row flex-basis will control width */
+            /* when flex-direction is set to column flex-basis will control height */
+        }
+        #item-4{
+            order:40;
+            flex-grow: 2;
+            flex: 2 2 320px; /*flex: flew-grow flex-shrink flex-basis*/
+        }
+        #item-3{
+            align-items: flex-end;
+            align-items: flex-start;
+            align-self: center;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>This is a Flexbox</h1>
+    <div class="container">
+        <div class="item" id="item-1">First box</div>
+        <div class="item" id="item-2">Second box</div>
+        <div class="item" id="item-3">Third box</div>
+        <div class="item" id="item-4">Fourth box</div>
+        <div class="item" id="item-5">Fifth box</div>
+        <div class="item" id="item-6">Sixth box</div>
+    </div>
+</body>
+</html>
