@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript | Strings and its Methods</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Hello world</h1>
+        <div id="content"></div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, officia.</p>
+    </div>
+    <script>
+        var string1="this string1";
+        var string2=" string2";
+        var string3=" string3";
+        var string4="hello";
+        console.log(string1+string2+string3);
+        
+        var temp=`${string4} world, ${string1}${string2}${string3}`;
+        console.log(temp);
+
+        var len=string4.length;
+        console.log(`length of string4 is ${len}`);
+
+        console.log("hello world\\n \nabc\tdef");
+
+        var y=new String("this");
+        console.log(y);
+
+        document.getElementById('content').innerHTML='<h3>this is a h3 heading</h3>'
+    </script>
+</body>
+</html>
