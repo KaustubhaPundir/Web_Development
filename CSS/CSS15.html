@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute and nth child pseudo selectors</title>
+    <style>
+        
+        input[type='text']{  /*pseudo selector*/
+            border: 2px solid red;
+        }
+        a[target]{    /*pseudo selector having anchor a and setted target*/
+            color: aqua;
+        }
+
+        /*nth child pseudo selector*/
+        li:nth-child(3){  /*property for 3rd child*/
+            color: red;
+        }
+        li:nth-child(2n){  /*property for every 2nd child*/
+            color: aqua;
+        }
+        li:nth-child(5n+5){ /*n start from 0*/
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="http://google.com/" target="_blank">Go to Google</a>
+        <a href="http://google.com/">Go to Google2</a>
+        <form class="form-ctrl"action="">
+            <input type="text" placeholder="Enter your name">
+            <input type="password" placeholder="Enter your password">
+            <input type="submit" value="submit">
+        </form>
+        <ul>
+            <li class="item" id="item-1">item1</li>
+            <li class="item" id="item-2">item2</li>
+            <li class="item" id="item-3">item3</li>
+            <li class="item" id="item-4">item4</li>
+            <li class="item" id="item-5">item5</li>
+            <li class="item" id="item-6">item6</li>
+            <li class="item" id="item-7">item7</li>
+            <li class="item" id="item-8">item8</li>
+            <li class="item" id="item-9">item9</li>
+            <li class="item" id="item-10">item10</li>
+        </ul>
+    </div>
+</body>
+</html>
