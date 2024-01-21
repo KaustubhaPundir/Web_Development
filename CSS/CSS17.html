@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box and text shadow</title>
+</head>
+<style>
+    .container{
+        display: flex;
+
+
+    }
+    .card{
+        margin: 23px 23px;
+        /* border: 2px solid red; */
+        background-color: burlywood;
+        box-shadow: 10px 13px 10px green;  /*offset in x , offest in y, blur radius, color*/
+        box-shadow: 10px 13px 10px 10px green;  /*offset in x , offest in y, blur radius,spread radius, color*/
+        box-shadow: 10px 13px 10px 10px green, 12px 19px 10px 10px red; /*multiple shadows*/
+    }
+    #card-2{
+        box-shadow: -10px -13px green;
+    }
+    #card-3{
+        box-shadow: inset -3px -5px green; /*inset means shadow will go inside the box*/
+    }
+    .card h2{
+        text-shadow: 3px 2px red; /*rest same as box shadow*/
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="card" id="card-1"><h2>Card1</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error unde impedit tempore dolorum dolore ad. Doloribus unde itaque aliquam earum quod dolor quibusdam aliquid similique inventore impedit. Animi ullam perspiciatis praesentium impedit? Necessitatibus, deserunt!
+        </p>
+        </div>
+        <div class="card" id="card-2"><h2>Card2</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error unde impedit tempore dolorum dolore ad. Doloribus unde itaque aliquam earum quod dolor quibusdam aliquid similique inventore impedit. Animi ullam perspiciatis praesentium impedit? Necessitatibus, deserunt!
+        </p>
+        </div>
+        <div class="card" id="card-3"><h2>Card3</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error unde impedit tempore dolorum dolore ad. Doloribus unde itaque aliquam earum quod dolor quibusdam aliquid similique inventore impedit. Animi ullam perspiciatis praesentium impedit? Necessitatibus, deserunt!
+        </p>
+        </div>
+    </div>
+</body>
+</html>
