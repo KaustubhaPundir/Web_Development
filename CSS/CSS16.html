@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and after pseudo selector</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+        section{
+            height: 400px;
+            margin: 3pxpx 23px;
+            border: 2px solid red;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        section::before{
+            content: "This is before pseudo selector";
+        }
+        section::after{
+            content: "This is after pseudo selector";
+        }
+        .nav{
+            display: flex;
+        }
+        li{
+            list-style: none;
+            padding: 34px 23px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="header">
+            <ul class="nav">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Details</li>
+                <li class="item">Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <Section>
+        <h3>Welcome</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui et voluptates modi. Consequuntur magni, nostrum excepturi dolores
+            autem quia dolorem sapiente quam labore corrupti porro aliquid itaque suscipit quisquam perferendis.</p>
+    </Section>
+</body>
+</html>
