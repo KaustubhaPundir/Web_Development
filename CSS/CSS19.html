@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations and keyframes</title>
+</head>
+<style>
+    .cont{
+        background-color: yellow;
+    }
+    .box{
+        background-color: green;
+        width: 250px;
+        height: 250px;
+        position: relative;
+        animation-name: xyz2;
+        animation-duration: 10s;
+        animation-iteration-count: 30; /*for unstoppable animation set iteration count to infinity*/
+        /* animation-fill-mode: forwards; properties  in "to" will be applied at the end of animation */
+        animation-fill-mode: alternate; /*animation will end and return to its normal state*/
+        /* animation-timing-function: ease-in; animation starts with slow  */
+        /* animation-timing-function: ease-out; animation ends slowly */
+        /* animation-delay: 3s; */
+        /* animation-direction: reverse; */
+    }
+    @keyframes xyz2 {
+        0%{ /*animation at 0%*/
+            top: 0px;
+            left:0px;
+        }
+        25%{ /*animation at 25%*/
+            top:250px;
+            left: 0px;
+        }
+        80%{
+            top: 250px;
+            left: 250px;
+        }
+        100%{
+            top: 0px;
+            left: 250px;
+        }
+        
+    }
+    @keyframes xyz {
+        from{
+            width: 200px;
+        }
+        to{
+            width: 700px;
+        }
+    }
+</style>
+<body>
+    <div class="cont">
+        <div class="box">
+            this is a box
+        </div>
+    </div>
+</body>
+</html>
