@@ -47,9 +47,12 @@ header img{
     border: 2px solid gray;
     border-radius: 10px;
     cursor: pointer;
+    transition-property: background-color,padding;
+    transition-duration: 1s;
 }
 .btn:hover{
     background-color: white;
+    padding: 6px 20px;
     color: brown;
 }
 .banner{
@@ -70,9 +73,47 @@ header img{
     margin: 2px;
     padding: 2px;
     border: 2px solid gray;
+    border-radius: 20px;
     top: 50px;
     width: 200px;
     height: 300px;
+    transition: width,height,background-color;
+    transition-duration: 2s;
+}
+.icon1{
+    position: relative;
+    height: 50px;
+    width: 50px;
+}
+#box1para{
+    position: relative;
+    top: 20px;
+    font-size: 38px;
+}
+#box1:hover{
+    width: 400px;
+    height: 300px;
+    visibility: visible;
+    background-color: brown;
+    
+}
+#box2:hover{
+    width: 400px;
+    height: 300px;
+    background-color: yellow;
+    animation: animate2;
+}
+#box3:hover{
+    width: 400px;
+    height: 300px;
+    background-color: violet;
+    animation: animate3;
+}
+#box4:hover{
+    width: 400px;
+    height: 300px;
+    background-color: darkorange;
+    animation: animate4;
 }
 footer{
     background-color: black;
@@ -98,8 +139,4 @@ footer{
 #link_foot:hover{
     color: white;
 }
-.icon1{
-    position: relative;
-    height: 50px;
-    width: 50px;
-}
+
