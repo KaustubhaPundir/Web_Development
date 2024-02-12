@@ -1,0 +1,74 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: white;
+}
+header{
+    display: flex;
+    position: relative;
+    height: 150px;
+    top: 80px;
+    background-color: darkslategrey;
+    
+}
+#name{
+    color: ghostwhite;
+    position: relative;
+    top: 45px;
+    left: 40px;
+}
+#navbar-example2{
+    position: absolute;
+    top: 30%;
+    left: 60%;
+    background-color: darkslategray;
+    color: white;
+}
+.scrollspy-example{
+    position: relative;
+    top: 100px;
+}
+#personimg{
+    position:relative;
+    height: 400px;
+    width: 400px; 
+    border: 2px solid black;
+    left: 40px;
+    box-shadow:10px 13px 10px 10px yellow;
+}
+#imgpara{
+    position: relative;
+    top: 150px;
+    float: right;
+    right: 5%;
+    font-size: 20px;
+    text-align: center;
+}
+#aboutcont{
+    display: inline-block;
+    position: relative;
+    left: 25vw;
+    font-size: 20px;
+    text-align: center;
+}
+#skills li{
+    margin-bottom: 10px;
+    padding: 10px;
+    color: grey;
+}
+#cards{
+    margin: 2px solid black;   
+    padding: 40px;
+}
+#but{
+    position: relative;
+    left: 30%;
+}
+.gmail{
+    position: relative;
+    left: 50%;
+}
+.ln{
+    position: relative;
+    left: 60%;
+}
